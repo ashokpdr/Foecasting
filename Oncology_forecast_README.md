@@ -35,3 +35,18 @@ We provide visual insights into:
 ```bash
 pip install pandas numpy matplotlib seaborn prophet xgboost scikit-learn
 python sales_forecasting.py
+## Results
+
+The performance of the models was evaluated using **Mean Absolute Percentage Error (MAPE)**, where a lower MAPE indicates higher forecasting accuracy. Here are the results:
+
+- **Prophet Model**: MAPE = **5.56%**
+  - Prophet performs well in handling seasonality and external factors, providing a reliable forecast with a low error margin.
+  
+- **Tuned XGBoost Model**: MAPE = **8.37%**
+  - Although XGBoost excels in capturing non-linear patterns, its performance here was slightly worse than Prophet's due to limited features and potential overfitting.
+
+- **Ensemble Meta-model**: MAPE = **4.28%**
+  - The **Ensemble Meta-model**, which combines the strengths of both Prophet and XGBoost, provides the most accurate forecasts, with a **significant improvement** in forecast accuracy.
+
+### Conclusion:
+The **Ensemble Meta-model** outperformed both **Prophet** and **XGBoost** individually, validating the power of combining different model types for more reliable and robust predictions in sales forecasting. The **MAPE of 4.28%** is indicative of a highly accurate model, making it valuable for strategic decision-making in the pharmaceutical industry.
