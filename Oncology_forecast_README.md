@@ -29,9 +29,9 @@ We provide visual insights into:
 - Comparative performance of **Prophet**, **XGBoost**, and the **Ensemble Meta-model**.
 
 ## How to Run the Project
-
 1. **Clone the repository** and navigate to the project directory.
 2. **Install required dependencies** using the following command:
 
 ```bash
 pip install pandas numpy matplotlib seaborn prophet xgboost scikit-learn
+python sales_forecasting.py
