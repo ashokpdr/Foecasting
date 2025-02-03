@@ -35,6 +35,7 @@ We provide visual insights into:
 ```bash
 pip install pandas numpy matplotlib seaborn prophet xgboost scikit-learn
 python sales_forecasting.py
+
 ## Results
 
 The performance of the models was evaluated using **Mean Absolute Percentage Error (MAPE)**, where a lower MAPE indicates higher forecasting accuracy. Here are the results:
